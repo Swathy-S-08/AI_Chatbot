@@ -129,20 +129,6 @@ Download log:
 1. Click **Download Log**.
 2. The browser downloads `jarvis-conversations.txt`.
 
-## Demo Checklist
-
-For the demonstration video, show:
-
-1. Text input and response.
-2. Microphone input.
-3. Speech-to-text preview in the input box.
-4. Text-to-speech response.
-5. Voice on/off toggle.
-6. Light/dark theme toggle.
-7. Copy response button.
-8. Clear chat button.
-9. Download conversation log button.
-10. `logs/conversations.txt` showing timestamped conversation history.
 
 ## Useful Commands
 
