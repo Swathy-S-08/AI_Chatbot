@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VoxOrbit</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="chat-panel" aria-label="Jarvis chatbot">
+        <header class="topbar">
+          <div class="brand">
+            <span class="brand-mark" aria-hidden="true"></span>
+            <div>
+              <h1>VoxOrbit</h1>
+              <p>Interactive Chatbot Assistant</p>
+            </div>
+          </div>
+          <div class="header-actions">
+            <button class="toolbar-button" id="voiceToggle" type="button" aria-pressed="true">Voice On</button>
+            <button class="toolbar-button" id="themeToggle" type="button" aria-pressed="false">Light Mode</button>
+            <button class="toolbar-button" id="clearChatButton" type="button">Clear</button>
+            <a class="toolbar-button" id="downloadLogButton" href="/api/conversation-log" download>Download Log</a>
+            <div class="status-pill" id="statusPill">Ready</div>
+          </div>
+        </header>
+
+        <section class="messages" id="messages" aria-live="polite">
+          <article class="message bot">
+            <div class="avatar">J</div>
+            <div class="bubble">
+              <p>Hello, I am VoxOrbit. How may I help you today?</p>
+              <time>System online</time>
+            </div>
+          </article>
+        </section>
+
+        <form class="composer" id="chatForm">
+          <button class="icon-button" id="micButton" type="button" title="Start voice input" aria-label="Start voice input">
+            <span class="mic-icon" aria-hidden="true"></span>
+          </button>
+          <textarea id="messageInput" rows="1" placeholder="Ask Jarvis anything..." autocomplete="off"></textarea>
+          <button class="send-button" type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

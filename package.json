@@ -1,0 +1,25 @@
+{
+  "name": "jarvis-web",
+  "version": "1.0.0",
+  "description": "A Gemini-powered web chatbot with text input, voice input, speech output, and conversation logging.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": [
+    "chatbot",
+    "gemini",
+    "voice",
+    "text-to-speech",
+    "speech-to-text"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google/genai": "latest",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
